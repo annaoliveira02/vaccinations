@@ -4,6 +4,5 @@ from flask_migrate import Migrate
 
 def init_app(app: Flask):
 
-    from app.models.salgado_model import SalgadoModel
-
+    from app.models.vaccine_model import Vaccine
     Migrate(app, app.db)
